@@ -17,8 +17,4 @@ describe('WelcomeItem', () => {
     expect(wrapper.text()).toContain('Hello world')
     expect(wrapper.text()).toContain('Test Heading')
   })
-
-  it('this test case should fail', () => {
-    expect(1).toBe(2)
-  })
 })
