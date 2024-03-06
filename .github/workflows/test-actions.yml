@@ -26,8 +26,8 @@ jobs:
       - name: 'Unit tests'
         run: yarn test:unit
 
-      # - name: 'Lint'
-      #   run: yarn lint
+      - name: 'Lint'
+        run: yarn lint
 
       - name: 'Format'
         run: yarn format
