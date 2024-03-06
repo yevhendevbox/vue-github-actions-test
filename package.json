@@ -13,6 +13,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
+  "resolutions": {
+    "strip-ansi": "^6.0.1"
+  },
   "dependencies": {
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
