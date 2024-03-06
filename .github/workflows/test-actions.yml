@@ -1,0 +1,33 @@
+name: 'test-actions'
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: 'PR checks before Merge'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'checkout'
+        uses: actions/checkout@v4
+
+      - name: 'Install node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 'Install dependencies'
+        run: yarn install
+
+      - name: 'Unit tests'
+        run: yarn test:unit
+
+      - name: 'Lint'
+        run: yarn lint
+
+      - name: 'Format'
+        run: yarn format
