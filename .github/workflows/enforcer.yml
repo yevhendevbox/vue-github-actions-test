@@ -5,7 +5,7 @@ on:
     branches: [production]
 
 jobs:
-  check_branch:
+  build:
     name: Check branch
     runs-on: ubuntu-latest
     steps:
