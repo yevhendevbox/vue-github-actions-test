@@ -13,6 +13,7 @@ describe('WelcomeItem', () => {
   it('renders properly', () => {
     expect(wrapper.exists()).toBeTruthy()
   })
+  // TODO: refactor this ->
   it('should render slots content properly', () => {
     expect(wrapper.text()).toContain('Hello world')
     expect(wrapper.text()).toContain('Test Heading')
