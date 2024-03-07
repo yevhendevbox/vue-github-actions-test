@@ -1,11 +1,7 @@
 name: 'test-actions'
 on:
-  push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
+    branches: [main, production]
 
 jobs:
   test:
